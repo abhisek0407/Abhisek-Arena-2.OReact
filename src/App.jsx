@@ -3,7 +3,9 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom';
+//  BrowserRouter,
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Skills from './components/pages/Skills'
@@ -16,7 +18,7 @@ function App() {
   return (
     <>
     <div className='App'>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -26,7 +28,7 @@ function App() {
         <Route path='/Skills' element={<Skills/>}/>
         <Route path='/Portfolio' element={<Portfolio/>}/>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
     </>
   )
