@@ -1,0 +1,120 @@
+header{
+  position: sticky;
+  top: 0;
+  background-color: var(--headerbg-color);
+  z-index: 2;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3px;
+}
+nav ul {
+  display: flex;
+  margin-right: 2rem;
+}
+nav ul li {
+  list-style: none;
+  padding-right: 1rem;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+}
+.active {
+  background-color: #1d4ed8;
+}
+nav ul li a:not(.active):hover {
+  background-color: var(--hoverNav-color);
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: var(--menuColor);
+  border-radius: 0.2rem;
+}
+.achieve{
+    display: flex;
+    /* padding-top: 3px; */
+}
+.achievement{
+  background-color: var(--achieve-color);
+  width: 20rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  font-style: italic;
+  color: white;
+}
+.achieve-list{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: 15px;
+    background-color: var(--achievelist-color);
+    color: rgb(225, 246, 247);
+    font-style: italic;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+@media (max-width: 722px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+  /* .contactcont {
+  height: 35rem;
+  width: 25rem;
+  border: 3px solid blue;
+  border-radius: 10px;
+} */
+
+} 

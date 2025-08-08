@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+  /* --bg-color: #91eae5; */
+  --bg-color: whiteSmoke;
+  --text-color: #000000;
+  --headerbg-color:rgb(255, 255, 255);
+   --footerbg-color:#0a0b0f;
+   --footerText-color:white;
+   --hoverNav-color:rgb(147, 160, 241);
+   --menuColor:#14064f;
+   --achievelist-color:rgb(29, 29, 225);
+   --achieve-color:#14064f;
+   --skillsHead-color:blueviolet;
+   --contactHead-color:rgb(29, 29, 225);
+    --portfolioNav-color:rgb(219, 235, 244);
+}
+[data-theme="dark"] {
+  --bg-color: #14064f;
+  --text-color: #ffffff;
+  --headerbg-color:#0f172a;
+  --footerbg-color:#0f172a;
+  --footerText-color:white;
+  --hoverNav-color:#172554;
+  --menuColor:#fff;
+  --achievelist-color:rgb(36, 33, 86);
+  --achieve-color:rgb(68, 2, 68);
+  --skillsHead-color:rgb(35, 35, 82);
+  --contactHead-color:rgb(4, 4, 109);
+  --portfolioNav-color:blueviolet;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Example for navbar or others */
+/* nav {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+} */

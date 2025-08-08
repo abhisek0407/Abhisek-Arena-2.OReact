@@ -1,0 +1,57 @@
+.homecont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid blueviolet;
+}
+.imgcont:hover{
+    animation-name: edit;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    
+}
+  .Heroimgcap{
+    background-color: rgb(29, 29, 225);
+    font-weight: 700;
+    display: inline-block;
+}
+.carousel-image {
+  height:70vh; 
+  object-fit: contain; 
+}
+.carousel-inner {
+height: 70vh;
+}
+.HeroimgCap:hover {
+  transform: translateY(10px);
+}
+footer{
+background-color: var(--footerbg-color);
+
+}
+.foot-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    height: 4rem;
+    font-weight: 800;
+    color: white;
+    }
+@media (max-width: 480px) {
+     .imgcont{
+        height: 10px;
+        width: 20rem;
+    }
+    .foot-panel{
+      text-align: center;
+    }
+}
+@keyframes edit{
+    from{scale: 1; border-width: 3px;margin: 1px;}
+    to{scale: 1.05; border-width: 6px;margin: 20px;}
+}

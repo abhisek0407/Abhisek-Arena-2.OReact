@@ -1,0 +1,99 @@
+.portfolio-section {
+  padding: 4rem 2rem;
+  background-color: var(--background);
+  color: var(--text);
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  width: 260px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+}
+.card-title{
+  font-weight: 600;
+}
+.portfolio-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Modal override for Bootstrap */
+.modal-backdrop {
+  display: none;
+}
+.portfolioNav{
+  background-color: var(--portfolioNav-color);
+  padding-bottom: 0;
+
+}
+.portfolioAbout p{
+  text-align: center;
+  font-weight: 600;
+}
+.portfolioAbout{
+  padding-top: 25px;
+  text-align: center;
+}
+/* .portfolioContactcont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+} */
+.contact-preview {
+  padding: 40px 20px;
+}
+
+.contact-preview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-image {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.contact-btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+
+}
+.contact-btn a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}

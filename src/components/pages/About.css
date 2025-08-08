@@ -1,0 +1,32 @@
+.AboutHead{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.AboutHead h3{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+caption{
+    color: white;
+}
+.AboutDetails h4{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.AboutDetails h5{
+    font-weight: 600;
+}
+.AboutDetails{
+    padding: 1rem;
+    font-weight:600;
+}
+@media (max-width:480px){
+    .AboutDetails p{
+        text-align: center;
+    }
+    .AboutDetails h4{
+        text-align: center;
+    }
+   
+}

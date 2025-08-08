@@ -1,0 +1,48 @@
+.SkillsHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+.SkillsHead h3{
+    font-weight: bold;
+    background-color: var(--skillsHead-color);
+    width: 8rem;
+    text-align: center;
+}
+.SkillsHead h3:hover{
+    border: 2px solid white;
+}
+.skillListcont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillList{
+    display: flex;
+}
+.subList{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.HobbiesList{
+    padding-top: 1rem;
+}
+.HobbiesList ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HobbiesList ol li{
+    display: flex;
+    padding-top: 1rem;
+}
+/* .subList img{
+    width: 3rem;
+    background-color:rgb(20, 6, 79) ;
+
+} */
