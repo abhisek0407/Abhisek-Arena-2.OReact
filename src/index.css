@@ -41,7 +41,10 @@ body {
 html{
   scroll-behavior: smooth;
 }
-
+footer{
+  position: relative;
+  bottom: 0;
+}
 /* Example for navbar or others */
 /* nav {
   background-color: var(--bg-color);
