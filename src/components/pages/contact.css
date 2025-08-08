@@ -135,7 +135,8 @@
   .contact-part {
     font-size: 1rem;
     font-weight: bolder;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    margin-bottom: 0.5rem;
   }
   .contact-part p {
     margin-bottom: 0;
