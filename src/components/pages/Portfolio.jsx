@@ -46,7 +46,7 @@ const projects = [
     tech: "HTML, CSS, BootStrap, ReactJS",
     description:
       "An updatd version of Abhisek Arena  with an attractive layout design, showcasing my achievements, skills, hobbies, Projects, Certfications, Contact Informations ",
-    github: "src/components/ComingSoon.html",
+    github: "https://github.com/abhisek0407/Abhisek-Arena-2.OReact",
   },
   {
     id: 5,
@@ -64,35 +64,26 @@ const Portfolio = () => {
 
   const openModal = (project) => setSelected(project);
   const closeModal = () => setSelected(null);
-
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <>
       <nav className="portfolioNav">
         <ul>
-          <li>
-            <a href="#about" className="nav-link">
-              About
-            </a>
+          <li onClick={() => scrollToSection("about")}>About</li>
+          <li onClick={() => scrollToSection("projects")}>Projects</li>
+          <li onClick={() => scrollToSection("certifications")}>
+            Certifications
           </li>
-          <li>
-            <a href="#projects" className="nav-link">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#certifications" className="nav-link">
-              Certifications
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="nav-link">
-              Contact me
-            </a>
-          </li>
+          <li onClick={() => scrollToSection("contact")}>Contact me</li>
         </ul>
       </nav>
-      <div className="portfolioAbout" id="about">
-        <h2 className="portfolio-title">Goals & Future ambitions</h2>
+      <div className="portfolioAbout">
+        <h2 className="portfolio-title" id="about">Goals & Future ambitions</h2>
         <p>
           👨‍💻Hello guys, My name is Abhisek Panda, currently pursuing BTech in
           the branch of CSE(AIML) at Odisha University of Technology & Research,
@@ -111,8 +102,8 @@ const Portfolio = () => {
         </p>
       </div>{" "}
       <hr />
-      <div className="portfolio-section" id="projects">
-        <h2 className="portfolio-title">My Projects</h2>
+      <div className="portfolio-section" >
+        <h2 className="portfolio-title" id="projects">My Projects</h2>
         <div className="portfolio-container">
           {projects.map((project) => (
             <div
@@ -179,8 +170,8 @@ const Portfolio = () => {
         )}
       </div>
       <hr />
-      <div className="portfolio-section" id="certifications">
-        <h2 className="portfolio-title">My Certifications</h2>
+      <div className="portfolio-section">
+        <h2 className="portfolio-title" id="certifications">My Certifications</h2>
         <div className="portfolio-container">
           <div class="card portfolio-card">
             <img src={Aware} class="card-img-top" alt="Ai Aware" />
@@ -267,8 +258,8 @@ const Portfolio = () => {
       </div>
       <hr />
       {/* Contact Preview Section */}
-      <div className="portfolio-section contact-preview"  id="contact">
-        <h2 className="portfolio-title">Get In Touch</h2>
+      <div className="portfolio-section contact-preview">
+        <h2 className="portfolio-title" id="contact">Get In Touch</h2>
         <div className="contact-preview-content">
           <img src={Contactme} alt="Contact" className="contact-image" />
           <div className="contact-text">

@@ -97,3 +97,13 @@
   color: #fff;
   border-color: #007bff;
 }
+.portfolioNav li {
+  cursor: pointer;
+}
+.portfolioNav li:hover {
+  color: #007bff;
+}
+
+h2[id] {
+  scroll-margin-top: 100px; 
+}
