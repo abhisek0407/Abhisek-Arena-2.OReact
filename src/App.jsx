@@ -11,6 +11,7 @@ import About from './components/pages/About'
 import Skills from './components/pages/Skills'
 import Contact from './components/pages/Contact'
 import Portfolio from './components/pages/Portfolio'
+import Internet from './components/pages/internet';
 import Main from './components/Main'
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Home' element={<Home/>}/>
         <Route path='/Skills' element={<Skills/>}/>
         <Route path='/Portfolio' element={<Portfolio/>}/>
+        <Route path='/Internet' element={<Internet/>}/>
       </Routes>
       </HashRouter>
     </div>

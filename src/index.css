@@ -18,6 +18,7 @@
    --skillsHead-color:blueviolet;
    --contactHead-color:rgb(29, 29, 225);
     --portfolioNav-color:rgb(219, 235, 244);
+    --videocolor:rgb(231, 229, 237);
 }
 [data-theme="dark"] {
   --bg-color: #14064f;
@@ -32,6 +33,7 @@
   --skillsHead-color:rgb(35, 35, 82);
   --contactHead-color:rgb(4, 4, 109);
   --portfolioNav-color:blueviolet;
+  --videocolor:rgb(22, 22, 110);
 }
 body {
   background-color: var(--bg-color);

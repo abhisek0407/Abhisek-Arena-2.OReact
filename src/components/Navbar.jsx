@@ -87,6 +87,17 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
+                to="/Internet"
+                onClick={() => {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }}
+              >
+                Internet Appearances
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/Contact"
                 onClick={() => {
                   document.body.scrollTop = 0;

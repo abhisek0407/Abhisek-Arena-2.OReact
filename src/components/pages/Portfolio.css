@@ -107,3 +107,15 @@
 h2[id] {
   scroll-margin-top: 100px; 
 }
+@media (max-width: 1056px){
+    .portfolioNav ul{
+    font-size: 17px;
+  }
+ .portfolioNav ul li{
+    padding-right: 1rem;
+  }
+  .portfolioNav ul li a{
+    padding: 0.25rem;
+   
+  }
+}
