@@ -181,7 +181,7 @@ const Portfolio = () => {
                 I have achieved this by doing AI Aware course provided by GOVT
                 of Odisha.
               </p>
-              <a href="src/assets/AiAware.png" class="btn btn-primary">
+              <a href={Aware} class="btn btn-primary">
                 View Certificate
               </a>
             </div>
@@ -194,7 +194,7 @@ const Portfolio = () => {
                 I have achieved this by doing AI Appreciate course provided by
                 GOVT of Odisha.
               </p>
-              <a href="src/assets/AiAppreciate.png" class="btn btn-primary">
+              <a href={Appreciate} class="btn btn-primary">
                 View Certificate
               </a>
             </div>
@@ -208,7 +208,7 @@ const Portfolio = () => {
                 of MS Office in 3 months duration
               </p>
               <a
-                href="src/assets/BasicComputerCourse.png"
+                href={basicCourse}
                 class="btn btn-primary"
               >
                 View Certificate
@@ -223,7 +223,7 @@ const Portfolio = () => {
                 I have achieved this certificate by doing TCS iON's presentation
                 skills course
               </p>
-              <a href="src/assets/presentation.png" class="btn btn-primary">
+              <a href={presentation} class="btn btn-primary">
                 View Certificate
               </a>
             </div>
@@ -236,7 +236,7 @@ const Portfolio = () => {
                 I have achieved this certificate by doing TCS iON's Email
                 Etiquette course.
               </p>
-              <a href="src/assets/Email.png" class="btn btn-primary">
+              <a href={emailCourse} class="btn btn-primary">
                 View Certificate
               </a>
             </div>
@@ -249,7 +249,7 @@ const Portfolio = () => {
                 I have achieved this by doing TCS iON's Communication skills
                 course
               </p>
-              <a href="src/assets/communication.png" class="btn btn-primary">
+              <a href={communication} class="btn btn-primary">
                 View Certificate
               </a>
             </div>
